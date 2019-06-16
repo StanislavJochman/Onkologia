@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-app = Flask(__name__, static_url_path = "/img", static_folder = "img")
+app = Flask(__name__, static_url_path = "/page", static_folder = "page")
 
 
 @app.route("/")
