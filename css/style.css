@@ -1,7 +1,15 @@
-/*https://designshack.net/articles/trends/best-website-color-schemes/*/
 
 body {
-  font-family: 'Lato';
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #474646;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
 }
 
 h1,
@@ -10,238 +18,182 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-  font-family: 'Montserrat';
-}
-.header_photo {
-  margin-top: 5vh;
-  border-radius: 2vw;
-  width: 70%;
-}
-hr.star-light,
-hr.star-dark {
-  max-width: 20rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  text-transform: uppercase;
+  color: #343a40;
 }
 
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.social-icons a {
   display: inline-block;
-  padding: 0 0.3em;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2em;
-}
-
-hr.star-light {
-  border-color: #fff;
-}
-
-hr.star-light:after {
-  color: #fff;
-  background-color: #659df7;
-}
-
-hr.star-dark {
-  border-color: #2C3E50;
-}
-
-hr.star-dark:after {
-  color: #2C3E50;
-  background-color: white;
-}
-
-section {
-  padding: 6rem 0;
-}
-
-section h2 {
-  font-size: 2.25rem;
-  line-height: 2rem;
-}
-
-@media (min-width: 1600) {
-  section h2 {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
-
-.btn-xl {
-  padding: 1rem 1.75rem;
-  font-size: 1.25rem;
-}
-
-.about_people{
-  position: absolute;
-  bottom: 0vh;
-  color: #2C3E50;
-  z-index: 0;
-  width: 100%;
-  font-weight: 700;
-  font-family: 'Montserrat';
-  
-
-}
-.about_people_box{
-  width: 100%;
-  height: 6vh;
-  position: absolute;
-  bottom: 0vh;
-  background: #63BCE5;
-  border-radius: 0vw 0vw 1vw 1vw;
-}
-.about_people_img{
-  border-radius:1vw;
-}
-
-.btn-social {
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
-  line-height: 2rem;
-}
-
-.scroll-to-top {
-  z-index: 1042;
-  right: 1rem;
-  bottom: 1rem;
-  display: none;
-}
-
-.scroll-to-top a {
-  width: 3.5rem;
   height: 3.5rem;
-  background-color: rgba(33, 37, 41, 0.5);
-  line-height: 3.1rem;
-}
-
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: 700;
-  font-family: 'Montserrat';
-}
-.navbar-logo{
-  margin-left: 5vw;
-  width: 30vw;
-}
-
-.navbar-logo:hover {
-  -webkit-filter: invert(1) hue-rotate(45deg);
-  filter: invert(1) hue-rotate(45deg);
-}
-#mainNav .navbar-brand {
-  color: #fff;
-}
-
-#mainNav .navbar-nav {
-  margin-top: 1rem;
-  letter-spacing: 0.0625rem;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: black;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  width: 3.5rem;
+  background-color: #495057;
   color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
 }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.8rem;
-  
-}
-#mainNav .navbar-toggler:hover {
-  background-color:#007bff !important;
-  
-}
-#mainNav .navbar-toggler: {
-  background-color: #2C3E50 !important;
-  
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
-@media (min-width: 1300px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-  }
-  #mainNav .navbar-logo{
-    margin-left: -5vw !important;
-    width: 10vw;
-  }
-  #mainNav .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: font-size 0.3s;
-    transition: font-size 0.3s;
-  }
-  #mainNav .navbar-nav {
-    margin-top: 0;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #0F2557;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #0F2557;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
-  }
+.social-icons a:hover {
+  background-color: #BD5D38;
 }
 
-header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
-}
-
-header.masthead h1 {
+.dev-icons {
   font-size: 3rem;
-  line-height: 3rem;
 }
 
-header.masthead h2 {
-  font-size: 1.3rem;
-  font-family: 'Lato';
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #63BCE5;
 }
 
 @media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
   }
-  header.masthead h1 {
-    font-size: 4.75em;
-    line-height: 4rem;
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
   }
-  header.masthead h2 {
-    font-size: 1.75em;
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
   }
+  #sideNav .navbar-brand .img-profile:hover {
+    -webkit-filter: invert(1) hue-rotate(45deg);
+    filter: invert(1) hue-rotate(45deg);
+    opacity: 0.4;
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #28559A; !important;
+}
+
+.text-primary {
+  color: #28559A !important;
+}
+.text-secondary {
+  color: #63BCE5 !important;
+}
+
+a {
+  color: #63BCE5;
+}
+
+a:hover, a:focus, a:active {
+  color: #28559A !important;
+}
+.nav-link:hover{
+  color: #28559A !important;
 }
 
 .portfolio {
@@ -315,122 +267,6 @@ header.masthead h2 {
     font-size: 3rem;
   }
 }
-
-.floating-label-form-group {
-  position: relative;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  font-size: 1.5em;
-  position: relative;
-  z-index: 1;
-  padding-right: 0;
-  padding-left: 0;
-  resize: none;
-  border: none;
-  border-radius: 0;
-  background: none;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-.floating-label-form-group label {
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  position: relative;
-  z-index: 0;
-  top: 2em;
-  display: block;
-  margin: 0;
-  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
-  transition: top 0.3s ease, opacity 0.3s ease;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-}
-
-.floating-label-form-group:not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #e9ecef;
-}
-
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-
-.floating-label-form-group-with-focus label {
-  color: #18BC9C;
-}
-
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #e9ecef;
-}
-
-.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #2C3E50;
-  color: #fff;
-}
-
-.copyright {
-  background-color: #1a252f;
-}
-
-a {
-  color: #28559A;
-}
-
-a:focus, a:hover, a:active {
-  color: #0F2557;
-}
-
-.btn {
-  border-width: 2px;
-}
-
-.bg-primary {
-  background-color: #63BCE5  !important;
-}
-
-.bg-secondary {
-  background-color: #28559A !important;
-}
-.text-underline{
-  text-decoration: underline;
-}
-
-a.text-white:hover{
-   text-decoration-color: #28559A;
-}
-
-.text-primary {
-  color: #28559A !important;
-}
-
-.text-secondary {
-  color: #2C3E50 !important;
-}
-
-.btn-primary {
-  background-color: #28559A;
-  border-color: #28559A;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #0F2557;
-  border-color: #0F2557;
-}
-
-.btn-secondary {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #1a252f;
-  border-color: #1a252f;
+.about_people_img{
+  border-radius:1vw;
 }
