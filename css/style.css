@@ -53,7 +53,7 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #007bff;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -67,7 +67,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #007bff;
 }
 
 .dev-icons {
@@ -75,7 +75,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #007bff;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -271,4 +271,26 @@ a:hover, a:focus, a:active {
 }
 .about_people_img{
   border-radius:1vw;
+}
+
+.drive{
+  overflow:hidden;
+  border-radius: 25px;
+  border: 5px solid #99999;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
