@@ -198,6 +198,8 @@ a:hover, a:focus, a:active {
 
 .portfolio {
   margin-bottom: -15px;
+  color: #63BCE5;
+  font-weight: 700;
 }
 
 .portfolio .portfolio-item {
@@ -211,12 +213,12 @@ a:hover, a:focus, a:active {
 .portfolio .portfolio-item .portfolio-item-caption {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
-  opacity: 0;
-  background-color: #28559A;border-radius: 1vw;
+  background-color: #007bff!important;border-radius: 1vw;
+  
 }
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+.portfolio .portfolio-item .portfolio-item-caption {
   opacity: 1;
-  z-index: 999;
+  z-index: -1;
   text-decoration: none;
 }
 
@@ -238,7 +240,7 @@ a:hover, a:focus, a:active {
   min-height: calc(100vh - 2rem);
   margin: 1rem calc(1rem - 8px);
   position: relative;
-  z-index: 2;
+  z-index: 0;
   -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
 }
