@@ -27,6 +27,4 @@
 
 })(jQuery); // End of use strict
 
-window.onGoogleYoloLoad = (googleyolo) => {
-  // The 'googleyolo' object is ready for use.
-};
+
