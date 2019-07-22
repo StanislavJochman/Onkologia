@@ -38,3 +38,6 @@ function onSignIn(googleUser) {
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
   alert("done");
 }
+function Onclick(){
+  alert("logged in")
+}
