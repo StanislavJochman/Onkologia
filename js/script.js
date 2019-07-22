@@ -28,7 +28,7 @@
 })(jQuery); // End of use strict
 
 function init() {
-  gapi.load('auth2', function() { // Ready. });
+  gapi.load('auth2', function() {});
 }
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
