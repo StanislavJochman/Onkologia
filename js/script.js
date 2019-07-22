@@ -39,5 +39,5 @@ function onSignIn(googleUser) {
   alert("done");
 }
 function Onclick(){
-  console.log("logged in")
+  location.reload(forcedReload);
 }
