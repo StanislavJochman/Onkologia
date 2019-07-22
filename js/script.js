@@ -39,5 +39,5 @@ function onSignIn(googleUser) {
   alert("done");
 }
 function Onclick(){
-  alert("logged in")
+  console.log("logged in")
 }
