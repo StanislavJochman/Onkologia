@@ -41,5 +41,16 @@ function onSignIn(googleUser) {
   // The ID token you need to pass to your backend:
   var id_token = googleUser.getAuthResponse().id_token;
   console.log("ID Token: " + id_token);
-  alert("loggedin")
 }
+$("#google-login-button").on('click', function() {
+	// API call for Google login
+	gapi.auth2.getAuthInstance().signIn().then(
+		function(success) {
+			console.log("loggedin");
+		},
+		function(error) {
+			// Error occurred
+			// console.log(error) to find the reason
+		}
+	);
+});
