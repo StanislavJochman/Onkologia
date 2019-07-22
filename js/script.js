@@ -28,3 +28,41 @@
 })(jQuery); // End of use strict
 
 
+function HandleGoogleApiLibrary() {
+	// Load "client" & "auth2" libraries
+	gapi.load('client:auth2',  {
+		callback: function() {
+			// Initialize client & auth libraries
+			gapi.client.init({
+		    	apiKey: 'AIzaSyBtQxl6hRPYm0v0lZYfnsagW-d3NyLRrFY',
+		    	clientId: '1061342251645-susm1gm3pf1o994ub63df6mat03vha20.apps.googleusercontent.com',
+		    	scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me'
+			}).then(
+				function(success) {
+			  		console.log("succes");
+				}, 
+				function(error) {
+					// Error occurred
+					// console.log(error) to find the reason
+			  	}
+			);
+		},
+		onerror: function() {
+			// Failed to load libraries
+		}
+	});
+}
+function onSignIn(googleUser) {
+  // Useful data for your client-side scripts:
+  var profile = googleUser.getBasicProfile();
+  console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+  console.log('Full Name: ' + profile.getName());
+  console.log('Given Name: ' + profile.getGivenName());
+  console.log('Family Name: ' + profile.getFamilyName());
+  console.log("Image URL: " + profile.getImageUrl());
+  console.log("Email: " + profile.getEmail());
+
+  // The ID token you need to pass to your backend:
+  var id_token = googleUser.getAuthResponse().id_token;
+  console.log("ID Token: " + id_token);
+}
