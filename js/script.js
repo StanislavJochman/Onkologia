@@ -28,30 +28,6 @@
 })(jQuery); // End of use strict
 
 
-function HandleGoogleApiLibrary() {
-	// Load "client" & "auth2" libraries
-	gapi.load('client:auth2',  {
-		callback: function() {
-			// Initialize client & auth libraries
-			gapi.client.init({
-		    	apiKey: 'AIzaSyBtQxl6hRPYm0v0lZYfnsagW-d3NyLRrFY',
-		    	clientId: '1061342251645-susm1gm3pf1o994ub63df6mat03vha20.apps.googleusercontent.com',
-		    	scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me'
-			}).then(
-				function(success) {
-			  		console.log("succes");
-				}, 
-				function(error) {
-					// Error occurred
-					// console.log(error) to find the reason
-			  	}
-			);
-		},
-		onerror: function() {
-			// Failed to load libraries
-		}
-	});
-}
 function onSignIn(googleUser) {
   // Useful data for your client-side scripts:
   var profile = googleUser.getBasicProfile();
