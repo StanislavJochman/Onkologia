@@ -27,7 +27,9 @@
 
 })(jQuery); // End of use strict
 
-
+function init() {
+  gapi.load('auth2', function() { // Ready. });
+}
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
