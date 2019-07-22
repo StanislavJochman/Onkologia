@@ -29,6 +29,7 @@
 
 
 function onSignIn(googleUser) {
+  console.log("done");
   // Useful data for your client-side scripts:
   var profile = googleUser.getBasicProfile();
   console.log("ID: " + profile.getId()); // Don't send this directly to your server!
