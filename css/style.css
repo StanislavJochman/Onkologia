@@ -320,3 +320,14 @@ a:hover, a:focus, a:active {
 .copyright {
   margin-top: -5rem;
 }
+
+/*
+
+form {display:block;width: 30%}
+form .input {display:inline-block;vertical-align:top;margin:0px 10px 10px 10px;}
+form .buttons {display:block;margin:10px 10px 0px 10px;}
+form .button {height:40px;line-height:40px;background-color:#007bff!important;color:#ffffff;font-size:16px;font-weight:bold;padding:0px 15px 0px 15px;border-radius:15px;}
+form .input.value_titul_pred,
+form .input.value_titul_za {width:60%;}
+form .input.value_titul_pred input[type="text"],
+form .input.value_titul_za input[type="text"] {width:60%}*/
