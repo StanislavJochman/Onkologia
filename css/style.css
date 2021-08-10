@@ -321,6 +321,10 @@ a:hover, a:focus, a:active {
   margin-top: -5rem;
 }
 
+.name{
+  color: aliceblue;
+}
+
 /*
 
 form {display:block;width: 30%}
