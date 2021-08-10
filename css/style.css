@@ -324,6 +324,11 @@ a:hover, a:focus, a:active {
 .name{
   color: aliceblue;
 }
+.konferencie{
+  width: 120%;
+  height: 360%;
+  overflow: hidden !important; 
+}
 
 /*
 
