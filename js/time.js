@@ -14,14 +14,14 @@ let countDown2 = new Date('Apr 1, 2022 09:00:00').getTime();
     document.getElementById('time1').innerText = "O " + Math.floor(distance1 / (day)) + " dní";
     //document.getElementById('time2').innerText = "O " + Math.floor(distance2 / (day)) + " dní";
       
-    //if(distance1 < 0) {
-    //  clearInterval(x);
-    //  document.getElementById("time1").innerHTML = "Prebehlo";
-    //}
-    if(distance2 < 0) {
-        clearInterval(x);
-        document.getElementById("time2").innerHTML = "Prebehlo";
-      }
+    if(distance1 < 0) {
+      clearInterval(x);
+      document.getElementById("time1").innerHTML = "Prebehlo";
+    }
+    //if(distance2 < 0) {
+    //    clearInterval(x);
+    //    document.getElementById("time2").innerHTML = "Prebehlo";
+    //  }
 
     }, second)
 
