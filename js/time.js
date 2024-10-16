@@ -3,7 +3,7 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown1 = new Date('Feb 8, 2024 09:00:00').getTime();
+let countDown1 = new Date('Feb 6, 2025 09:00:00').getTime();
 let countDown2 = new Date('Apr 1, 2022 09:00:00').getTime();
     x = setInterval(function() {
 
