@@ -309,7 +309,7 @@ a:hover, a:focus, a:active {
   
 }
  
-.iframe-container iframe {
+.iframe-container embed {
    border: 0;
    height: 100%;
    left: 0;
